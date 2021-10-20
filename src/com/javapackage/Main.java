@@ -25,5 +25,14 @@ public class Main {
          int herAge = myAge;
         System.out.println(herAge);
 
+        //Primitive Types
+        byte hisAge = 30;
+        int viewsCount = 123_456_789; //just like we use commas in java we can add underscores to support readability
+        System.out.println(viewsCount);
+        long viewCount = 3_123_456_789L; // L or l is needed
+        double price = 10.99;
+        float totalPrice = 10.99f;
+        char letter = 'A'; //single quote
+        boolean isEligible = true;
     }
 }
