@@ -85,7 +85,12 @@ public class Main {
         int[] numbers = {1,2,3,4,5};
         System.out.println(numbers.length);
 
+        //multidimensional arrays
+        //2 dimensional to store a matrix
+        //3 dimensional to store a cube
 
+        int [][] numberS= {{1,2,3},{4,5,6}};
+        System.out.println(Arrays.deepToString(numberS)); //deep to string needed for multidimensional arrays
 
     }
 }
