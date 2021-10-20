@@ -1,5 +1,6 @@
 package com.javapackage;
 
+import java.awt.*;
 import java.util.Date;
 
 public class Main {
@@ -43,5 +44,14 @@ public class Main {
         System.out.println(now);
              now.getTime();    //the now instance can now use all the methods written within the Date class by using the "." reference
                     //. for i methods are pre-built in and are good time savers
+
+
+        //Reference Types vs Primitive Types
+        //data allocation
+
+        Point point1 = new Point();
+        Point point2 = point1;
+        point1.x = 2;
+        System.out.println(point2);
     }
 }
