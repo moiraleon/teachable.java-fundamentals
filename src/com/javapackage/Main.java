@@ -92,5 +92,9 @@ public class Main {
         int [][] numberS= {{1,2,3},{4,5,6}};
         System.out.println(Arrays.deepToString(numberS)); //deep to string needed for multidimensional arrays
 
+
+        //Constants
+        //use the keyword final before variable to initialize it as a constant
+        //use capital letters to initialize the constant VARIABLE_NAME
     }
 }
