@@ -17,5 +17,13 @@ public class Main {
 //        Hello World
         //these are the compilation and execution steps we don't see when we are using Intellij
 
+        //Variables
+        int age = 30;
+        int temperature = 20;
+        age = 35;
+         int myAge = 24;
+         int herAge = myAge;
+        System.out.println(herAge);
+
     }
 }
