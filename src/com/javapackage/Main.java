@@ -1,5 +1,7 @@
 package com.javapackage;
 
+import java.util.Date;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -34,5 +36,12 @@ public class Main {
         float totalPrice = 10.99f;
         char letter = 'A'; //single quote
         boolean isEligible = true;
+
+        //Reference Types
+        //use new to allocate memory
+        Date now = new Date(); //now is a new instance of the Date class pre-written in Java
+        System.out.println(now);
+             now.getTime();    //the now instance can now use all the methods written within the Date class by using the "." reference
+                    //. for i methods are pre-built in and are good time savers
     }
 }
