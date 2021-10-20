@@ -62,5 +62,14 @@ public class Main {
         System.out.println(message);
         System.out.println(message.trim()); //gets rid of unnecessary white spaces
 
+        //Escape Sequences
+        String pathDirectories = "c:\\Windows\\..";//only prints one slash and this is how we put\ in quotes - if we need to put " in our string we just follow it with a \
+        System.out.println(pathDirectories);
+        String showingNewLine = "c:\nWindows\\.."; // \n creates a new line
+        System.out.println(showingNewLine);
+        String showingTab = "c:\tWindows\\.."; // \t creates a tab space
+        System.out.println(showingTab);
+
+
     }
 }
