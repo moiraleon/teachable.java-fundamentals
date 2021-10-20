@@ -39,7 +39,7 @@ public class Main {
         boolean isEligible = true;
 
         //Reference Types
-        //use new to allocate memory
+        //use new to allocate memory - //reference types like string don't require new or an import but are reference types
         Date now = new Date(); //now is a new instance of the Date class pre-written in Java
         System.out.println(now);
              now.getTime();    //the now instance can now use all the methods written within the Date class by using the "." reference
@@ -53,5 +53,14 @@ public class Main {
         Point point2 = point1;
         point1.x = 2;
         System.out.println(point2);
+
+        String message = "    Hello World" +"!    ";
+        System.out.println(message.endsWith("!"));
+        System.out.println(message.length());
+        System.out.println(message.indexOf("o")); //returns -1 if  no occurrence
+        System.out.println(message.replace("e","*"));//these values here are arguments target and replacement are parameters, but the e and * are arguments
+        System.out.println(message);
+        System.out.println(message.trim()); //gets rid of unnecessary white spaces
+
     }
 }
