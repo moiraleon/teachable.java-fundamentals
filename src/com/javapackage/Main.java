@@ -96,5 +96,12 @@ public class Main {
         //Constants
         //use the keyword final before variable to initialize it as a constant
         //use capital letters to initialize the constant VARIABLE_NAME
+
+        //Arithmetic Expressions
+
+        int x = 1;
+       // int y = x+2; the two lines are the same but the next one is shorter
+        int y = x+=2; //-= *= /=
+        System.out.println(y) ;
     }
 }
