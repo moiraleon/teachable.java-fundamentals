@@ -1,6 +1,7 @@
 package com.javapackage;
 
 import java.awt.*;
+import java.util.Arrays;
 import java.util.Date;
 
 public class Main {
@@ -69,6 +70,21 @@ public class Main {
         System.out.println(showingNewLine);
         String showingTab = "c:\tWindows\\.."; // \t creates a tab space
         System.out.println(showingTab);
+
+
+        //Arrays
+        int[] numbersArr = new int[5];//in brackets specify length of array
+        //older syntax for initializing an array
+        numbersArr[0] =1;
+        numbersArr[1] = 2;
+
+        System.out.println(numbersArr); //prints out weird string which corresponds to the arrays location in memory == [I@5b2133b1
+        System.out.println(Arrays.toString(numbersArr)); //prints out array
+
+        //newer syntax
+        int[] numbers = {1,2,3,4,5};
+        System.out.println(numbers.length);
+
 
 
     }
