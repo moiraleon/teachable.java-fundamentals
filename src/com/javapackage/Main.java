@@ -119,6 +119,10 @@ public class Main {
         int yyy = Integer.parseInt(xxx) + 2;
         System.out.println(yyy);
 
+        //The math class
+        //Math.ciel .round .floor .max (etc.) .random(naturally between 0-1 so multiply after to get within desired scope)
+        double result = Math.random() * 10;
+        System.out.println(Math.round(result)); //adding round to get whole number or written in definition as  double result =  Math.round(Math.random() * 10);
 
     }
 }
