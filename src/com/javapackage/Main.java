@@ -4,6 +4,7 @@ import java.awt.*;
 import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 
 public class Main {
 
@@ -138,6 +139,20 @@ public class Main {
         //or it can be done with method chaining
         String shortPercentResult = NumberFormat.getPercentInstance().format(0.1);
         System.out.println(shortPercentResult);
+
+
+        //Reading Input
+
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Age: "); //.print allows the input to be on the same line
+//        byte ageInput = scanner.nextByte();
+//        System.out.println("You are "+ ageInput);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Name: "); //.print allows the input to be on the same line
+        //String nameInput = scanner.next();//only grabs one token " Moira Leon" each part or string is considered a token
+        String nameInput = scanner.nextLine().trim();//trim to clean up extra whitespace
+        System.out.println("You are "+ nameInput);
 
     }
 }
