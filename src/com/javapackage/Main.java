@@ -1,6 +1,7 @@
 package com.javapackage;
 
 import java.awt.*;
+import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.Date;
 
@@ -123,6 +124,20 @@ public class Main {
         //Math.ciel .round .floor .max (etc.) .random(naturally between 0-1 so multiply after to get within desired scope)
         double result = Math.random() * 10;
         System.out.println(Math.round(result)); //adding round to get whole number or written in definition as  double result =  Math.round(Math.random() * 10);
+
+
+        //Number Formatting
+        NumberFormat currency =NumberFormat.getCurrencyInstance();
+        String currencyResult = currency.format(1234567.891);
+        System.out.println(currencyResult);//prints with dollar sign and commas after each 3 digits
+
+        NumberFormat percentInstance =NumberFormat.getPercentInstance();
+        String percentResult = percentInstance.format(0.1);
+        System.out.println(percentResult);
+
+        //or it can be done with method chaining
+        String shortPercentResult = NumberFormat.getPercentInstance().format(0.1);
+        System.out.println(shortPercentResult);
 
     }
 }
