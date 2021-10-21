@@ -103,5 +103,22 @@ public class Main {
        // int y = x+2; the two lines are the same but the next one is shorter
         int y = x+=2; //-= *= /=
         System.out.println(y) ;
+
+        //Casting
+        //Implicit casting happens under the hood like  a short to an int or an int to a double -- happens whenever we won't be losing data
+        // byte > short > int > long > float > double
+        //Explicit casting needs to be specified
+        //can only happen between compatible types like int to float not int to string
+        double xx = 1.1;
+        int yy = (int) xx +2;
+        System.out.println(y);
+
+        //for non-compatible types we use the wrapper class
+        Integer.parseInt("1");// for short, double etc.
+        String xxx = "1";
+        int yyy = Integer.parseInt(xxx) + 2;
+        System.out.println(yyy);
+
+
     }
 }
